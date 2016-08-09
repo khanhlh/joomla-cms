@@ -196,7 +196,7 @@ class JFormFieldFileList extends JFormFieldList
 		// Clean input path, fix DS issue on windows
 		$path = JPath::clean($path);
 		
- 		// Prepend some default options based on field attributes.
+		// Prepend some default options based on field attributes.
 		if (!$this->hideNone)
 		{
 			$options[] = JHtml::_('select.option', '-1', JText::alt('JOPTION_DO_NOT_USE', preg_replace('/[^a-zA-Z0-9_\-]/', '_', $this->fieldname)));
